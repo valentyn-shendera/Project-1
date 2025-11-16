@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex justify-center items-center p-4">
+  <div class="bg-white rounded-xl shadow-lg w-full max-w-md p-6">
+    <h2 class="text-2xl font-semibold mb-4">Checkout</h2>
+    
+    <!-- Products Summary -->
+    <div class="mb-6">
+      <h3 class="text-lg font-medium mb-2">Your Items</h3>
+      <ul class="space-y-2">
+        <li class="flex justify-between items-center bg-gray-50 p-2 rounded">
+          <span>Video Camera x1</span>
+          <span class="font-semibold">$849.90</span>
+        </li>
+        <li class="flex justify-between items-center bg-gray-50 p-2 rounded">
+          <span>Walkman x2</span>
+          <span class="font-semibold">$499.80</span>
+        </li>
+        <li class="flex justify-between items-center bg-gray-50 p-2 rounded">
+          <span>Turntable x4</span>
+          <span class="font-semibold">$5799.60</span>
+        </li>
+        <li class="flex justify-between items-center bg-gray-50 p-2 rounded">
+          <span>Pager x2</span>
+          <span class="font-semibold">$199.80</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Total -->
+    <div class="flex justify-between items-center font-bold text-lg mb-6">
+      <span>Total:</span>
+      <span>$7249.10</span>
+    </div>
+
+    <!-- Payment Form -->
+    <form class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium mb-1">Card Number</label>
+        <input type="text" placeholder="1234 5678 9012 3456" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+      </div>
+      <div class="flex gap-2">
+        <div class="flex-1">
+          <label class="block text-sm font-medium mb-1">Expiry</label>
+          <input type="text" placeholder="MM/YY" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+        </div>
+        <div class="flex-1">
+          <label class="block text-sm font-medium mb-1">CVV</label>
+          <input type="text" placeholder="123" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+        </div>
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1">Name on Card</label>
+        <input type="text" placeholder="John Doe" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500">
+      </div>
+
+      <!-- Pay Button -->
+      <button type="submit" class="w-full bg-orange-500 text-white font-bold py-3 rounded-lg hover:bg-orange-600 transition">Pay Now</button>
+    </form>
+  </div>
+</body>
+</html>
