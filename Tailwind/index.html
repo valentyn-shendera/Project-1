@@ -104,8 +104,22 @@
     <!-- CHECKOUT SECTION -->
     <div class="checkout-section bg-[#1e1b3a] px-4 py-4 rounded-t-2xl w-full max-h-2/5 overflow-y-auto">
       <div class="voucher-row flex items-center gap-2 mb-3">
-        <input type="text" class="voucher-input flex-1 text-white placeholder-gray-400] bg-[#1e1b3a] border-2 border-white rounded-xl px-4 py-3 text-xs text-center min-w-0 focus:outline-none" placeholder="VOUCHER CODE" />
-        <button class="total-btn flex-1 bg-[#ff4500] text-white font-extrabold rounded-xl py-3 px-4 text-xs whitespace-nowrap">TOTAL : $ 2649.60</button>
+        <input 
+  type="text"
+  placeholder="VOUCHER CODE"
+  class="flex-1 h-12 text-white text-xs text-center 
+         placeholder-gray-400 
+         bg-[#1e1b3a] border-2 border-white rounded-xl
+         min-w-0 focus:outline-none"
+/>
+
+<button 
+  class="flex-1 h-12 bg-[#ff4500] text-white font-extrabold text-xs 
+         rounded-xl whitespace-nowrap flex items-center justify-center"
+>
+  TOTAL : $ 2649.60
+</button>
+
       </div>
 
       <button onclick="window.location.href='checkout.html'" 
