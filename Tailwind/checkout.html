@@ -1,31 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="font-montserrat">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          montserrat: ['Montserrat', 'sans-serif'],
+        },
+      }
+    }
+  }</script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <style>
-    body { font-family: 'Montserrat', sans-serif; }
-  </style>
 </head>
 
-<body class="bg-[#f5f6fa] min-h-screen flex justify-center items-center p-4">
+<body class="bg-[#1e1b3a] min-h-screen">
 
-  <div class="w-full max-w-md bg-white rounded-2xl shadow-lg overflow-hidden">
+  <div class="w-full min-h-screen bg-white">
 
     <!-- HEADER (в стилі корзини) -->
-    <div class="bg-[#1e1b3a] text-white px-6 py-5 rounded-b-2xl">
-      <h2 class="text-xl font-semibold tracking-wide">Checkout</h2>
-      <p class="text-xs opacity-70 mt-1">Complete your payment</p>
-    </div>
+   <div class="bg-[#1e1b3a] text-white px-6 py-5 flex items-center gap-4 rounded-b-2xl">
 
-    <div class="p-6">
+  <!-- BACK BUTTON -->
+  <button onclick="window.location.href='index.html'"
+    class="bg-transparent p-2 rounded-full hover:bg-white/20 transition">
+    <img src="Images/dRXMl.png" class="w-2.5 invert" alt="Back">
+  </button>
+
+  <div>
+    <h2 class="text-lg sm:text-xl md:text-2xl font-semibold tracking-wide">Checkout</h2>
+    <p class="text-xs sm:text-xs opacity-70 -mt-1">Complete your payment</p>
+  </div>
+
+</div>
+
+    <div class="p-4 sm:p-6 md:p-8">
 
       <!-- Items -->
       <!-- Items Card -->
-<div class="bg-[#fbf9f9] p-4 rounded-2xl shadow-sm mb-6">
+<div class="bg-[#fbf9f9] p-4 rounded-2xl shadow-sm mb-6 border-2 border-[#ff4500]">
 
   <h3 class="text-md font-semibold mb-3 text-[#1e1b3a]">Your Items</h3>
 
@@ -54,10 +70,12 @@
 </div>
 
       <!-- Total -->
-      <div class="flex justify-between items-center font-bold text-lg mb-6 text-[#1e1b3a]">
-        <span>Total:</span>
-        <span>$7249.10</span>
-      </div>
+      <div class="p-3 rounded-xl border-2 border-[#ff4500] mb-6">
+  <div class="flex justify-between items-center font-bold text-lg text-[#1e1b3a]">
+    <span>Total:</span>
+    <span>$7249.10</span>
+  </div>
+</div>
 
       <!-- Payment Form -->
       <form class="space-y-4">
